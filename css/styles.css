@@ -63,3 +63,35 @@ body {
     color: #555;
     margin-top: 20px;
 }
+
+/* ... (estilos anteriores) ... */
+
+/* Estilos del Mapa */
+.map-container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.map-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #cccccc;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Sombra sutil blanca */
+
+    /* FILTRO OPCIONAL: Hace el mapa en escala de grises para combinar con el sitio negro */
+    filter: grayscale(100%) invert(90%);
+    transition: filter 0.3s ease;
+}
+
+/* Al pasar el mouse, el mapa recupera sus colores originales */
+.map-container iframe:hover {
+    filter: grayscale(0%) invert(0%);
+}
