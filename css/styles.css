@@ -1,0 +1,65 @@
+/* Reset básico para eliminar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Fondo Negro */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Estilos del Logo */
+.logo-container {
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 150px; /* Ajusta este tamaño según tu logo */
+    height: auto;
+    border-radius: 50%; /* Opcional: Si quieres el logo circular */
+    object-fit: cover;
+    border: 2px solid #333; /* Un borde sutil opcional */
+}
+
+/* Contenedor de iconos */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los iconos */
+    margin-bottom: 30px;
+}
+
+/* Estilo de los botones/iconos */
+.social-btn {
+    color: #ffffff; /* Iconos blancos */
+    font-size: 2rem; /* Tamaño de los iconos */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.social-btn:hover {
+    transform: scale(1.2); /* Crece ligeramente */
+    color: #cccccc; /* Se vuelve un poco gris */
+}
+
+/* Pie de página */
+.footer {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 20px;
+}
